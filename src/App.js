@@ -7,7 +7,7 @@ import { Routes } from './containers/Routes';
 export const App = () => {
   return (
     <BrowserRouter>
-      <Route path="/" component={Routes} />
+      <Route path="/home" component={Routes} />
     </BrowserRouter>
   )
 }

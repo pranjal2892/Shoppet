@@ -9,7 +9,9 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  devtool: 'source-map',
   devServer: {
+    inline:false,
     contentBase: './build',
     hot: true,
     historyApiFallback: true
@@ -46,8 +48,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebPackPlugin({
-      template: './public/index.html',
-      filename: './index.html'
+      template: './public/index.html'
     })
   ],
   resolve: {
